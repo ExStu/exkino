@@ -1,0 +1,11 @@
+.span {
+  @apply flex items-end gap-x-4;
+
+  & svg {
+    transition: transform .3s ease-in-out;
+  }
+
+  &:hover svg {
+    transform: translateX(10px);
+  }
+}
