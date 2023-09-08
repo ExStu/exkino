@@ -2,8 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   env: {
-    SERVER_URL: process.env.SERVER_URL,
-    APP_URL: process.env.APP_URL
+    API_URL: process.env.API_URL,
+    API_KEY: process.env.API_KEY
   },
   images: {
     domains: [

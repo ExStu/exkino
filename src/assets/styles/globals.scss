@@ -17,6 +17,5 @@
 }
 
 body {
-  @apply bg-black;
-  color: rgb(var(--foreground-rgb));
+  @apply bg-black text-white;
 }

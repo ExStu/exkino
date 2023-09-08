@@ -38,7 +38,7 @@ const Hero: FC = () => {
           style={{overflow: 'visible'}}
         >
           {heroData.map((item) => (
-            <SwiperSlide key={item.id} className='w-full static'>
+            <SwiperSlide key={item.id} className='w-full static' >
               
               <div className='w-full overflow-hidden relative h-[600px] rounded-2xl flex p-12' >
                 <Image
@@ -51,7 +51,7 @@ const Hero: FC = () => {
                   src={item.image}
                   alt={item.title}
                 />
-                <div className='p-5 backdrop-blur-sm backdrop-brightness-75 rounded-lg relative z-50 text-white self-end'>
+                <div className='p-5 backdrop-blur-sm backdrop-brightness-75 rounded-lg relative z-50 self-end'>
                   <h3 className='mb-5 text-2xl font-semibold'>{item.title}</h3>
                   <div className='flex items-center gap-x-5'>
                     <span className='px-1.5 bg-slate-400 font-semibold rounded-sm'>{item.rating}</span>

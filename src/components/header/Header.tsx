@@ -16,7 +16,7 @@ const Header:FC = () => {
           <Image src='/logo.svg' width={140} height={50} alt='Logo'/>
         </Link>
         <Navbar/>
-        <button className='text-white'>
+        <button>
           <BsSearch size={28}/>
         </button>
       </Container>
