@@ -40,6 +40,14 @@ export const exkinoAPI = createApi({
     //   query: (limit) =>
     //     ``
     // })
+    getFilms: build.query<IMovies, IQuery>({
+			query: ({ filters, page }) =>
+				`/movie?${filters.genre}&search[]=${filters.year}&field[]=year&search[]=${filters.rating}&field=rating.kp&search=!null&field=name&search=1&field=typeNumber&search=!null&field=votes.kp&sortField=year&sortType=${filters.sortByRelease}&limit=10&page=${page}&token=${API_KEY}`,
+		}),
+		getSeries: build.query<IMovies, IQuery>({
+			query: ({ filters, page }) =>
+				`/movie?${filters.genre}&search[]=${filters.year}&field[]=year&search[]=${filters.rating}&field=rating.kp&search=!null&field=name&search=2&field=typeNumber&search=!null&field=votes.kp&sortField=year&sortType=${filters.sortByRelease}&limit=10&page=${page}&token=${API_KEY}`,
+		}),
   })
 })
 
